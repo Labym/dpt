@@ -1,0 +1,10 @@
+spring:
+  jpa.hibernate.ddl-auto: none
+  datasource:
+    url: jdbc:h2:mem:test
+#    url: jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=dbvip1)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=dbvip2)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=tmolabdb6)))
+    username: sa
+    hikari.maximum-pool-size: 30
+
+
+datafile.path: "json/"
